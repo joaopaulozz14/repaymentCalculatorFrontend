@@ -1,0 +1,14 @@
+.home {
+    background-color: #E3F4FC;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    width: 700px;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
