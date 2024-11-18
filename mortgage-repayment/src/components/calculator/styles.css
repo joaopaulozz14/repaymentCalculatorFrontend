@@ -1,100 +1,101 @@
 .container-calculator {
-    background-color: #fff;
-    padding: 20px;
-    width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  width: 350px;
 }
 
 .title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
 }
 
 .flex-input {
-    display: flex;
+  display: flex;
 }
 
 .input-amount {
-    border: 1px solid rgba(0, 0, 0, 0.453);
-    display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.453);
+  display: flex;
+  border-radius: 6px;
+
+  p {
+    background-color: #e3f4fc;
+    width: 50px;
+    height: 100%;
+    padding: 10px;
     border-radius: 6px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+  }
 
-    p {
-        background-color: #E3F4FC;
-        width: 50px;
-        height: 100%;
-        padding: 10px;
-        border-radius: 6px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        text-align: center;
-    }
-
-    input {
-        padding-left: 20px;
-        width: 100%;
-        border-radius: 6px;
-    }
+  input {
+    padding-left: 20px;
+    width: 100%;
+    border-radius: 6px;
+  }
 }
 
-
 .input-term-and-rate {
-    display: flex;
-    margin-top: 20px;
-    gap: 20px;
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .input-term {
-    border: 1px solid rgba(0, 0, 0, 0.453);
-    display: flex;
-    width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.453);
+  display: flex;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+
+  input {
     border-radius: 6px;
-    margin-top: 10px;
+    width: 100%;
+    padding-left: 10px;
+  }
 
-    input {
-        border-radius: 6px;
-        width: 100%;
-        padding-left: 10px;
-
-
-    }
-
-    p {
-        background-color: #E3F4FC;
-        padding: 10px;
-        border-radius: 6px;
-
-    }
+  p {
+    background-color: #e3f4fc;
+    padding: 10px;
+    border-radius: 6px;
+  }
 }
 
 .input-rate {
-    border: 1px solid rgba(0, 0, 0, 0.453);
-    display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.453);
+  display: flex;
+  border-radius: 6px;
+  margin-top: 10px;
+
+  input {
     border-radius: 6px;
-    margin-top: 10px;
+    width: 100%;
+    padding-left: 10px;
+  }
 
-    input {
-        border-radius: 6px;
-        width: 100%;
-        padding-left: 10px;
-    }
-
-    p {
-        background-color: #E3F4FC;
-        padding: 10px;
-        border-radius: 6px;
-
-    }
+  p {
+    background-color: #e3f4fc;
+    padding: 10px;
+    border-radius: 6px;
+  }
 }
 
+.input-repayment-and-interest{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 12px;
+}
 .wrap-input {
-    border: 1px solid red;
-    padding: 5px;
-}
-
-.input-repayment {
-    border: 1px solid black;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.453);
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
 }
 
