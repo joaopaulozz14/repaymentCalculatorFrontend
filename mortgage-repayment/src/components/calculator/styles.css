@@ -1,21 +1,33 @@
 .container-calculator {
   background-color: #fff;
   padding: 20px;
-  width: 350px;
+  width: 400px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+
 }
 
 .title {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0 25px 0;
   justify-content: space-between;
+  color: hsl(202, 55%, 16%);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .flex-input {
   display: flex;
 }
-
+.input-general {
+  font-size: 14px;
+  color: var(--Slate900);
+}
+.input-general::placeholder {
+  color: var(--Slate900);
+}
 .input-amount {
   border: 1px solid rgba(0, 0, 0, 0.453);
   display: flex;
@@ -36,9 +48,20 @@
     padding-left: 20px;
     width: 100%;
     border-radius: 6px;
+    font-size: 14px;
+    color: var(--Slate900);
+  }
+
+  input::placeholder {
+    color: var(--Slate900);
   }
 }
-
+.mortgage-amount-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--Slate700);
+}
 .input-term-and-rate {
   display: flex;
   margin-top: 20px;
@@ -84,11 +107,15 @@
   }
 }
 
-.input-repayment-and-interest{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 12px;
+.input-repayment-and-interest {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 12px;
+  font-size: 14px;
+  p {
+    margin-bottom: 5px;
+  }
 }
 .wrap-input {
   padding: 8px;
@@ -98,4 +125,3 @@
   gap: 10px;
   padding-left: 15px;
 }
-
