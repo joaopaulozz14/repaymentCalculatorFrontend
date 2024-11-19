@@ -1,5 +1,10 @@
+import { useContext } from "react";
 import "./styles.css";
+import { DataContext } from "../../context";
+
 const Results = () => {
+  const { payment } = useContext(DataContext);
+
   return (
     <div className="container-results">
       <h2 className="container-results-title">Your results</h2>
@@ -14,7 +19,7 @@ const Results = () => {
       <div className="container-results-informations">
         <div className="container-results-informations-nums">
           <p>Your monthly repayments</p>
-          <h1>&pound;1,797.74</h1>
+          <h1>&pound;{payment}</h1>
         </div>
         <span className="line"></span>
         <div className="container-results-informations-nums">

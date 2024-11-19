@@ -1,7 +1,24 @@
+import { useContext, useEffect, useState } from "react";
 import Button from "../button";
 import "./styles.css";
+import { DataContext } from "../../context";
 
 const Calculator = () => {
+  const { setInputAmount, setInputInterest, setInputYears } =
+    useContext(DataContext);
+
+  const handleChangeAmount = (e) => {
+    setInputAmount(e.target.value);
+  };
+
+  const handleChangeYears = (e) => {
+    setInputYears(e.target.value);
+  };
+
+  const handleInputInterest = (e) => {
+    setInputInterest(e.target.value);
+  };
+
   return (
     <div className="container-calculator">
       <div className="title">
@@ -14,7 +31,12 @@ const Calculator = () => {
         <p>Mortgage Amount</p>
         <div className="input-amount input-general">
           <p>&pound;</p>{" "}
-          <input className="input-general" type="text" placeholder="$3000" />
+          <input
+            className="input-general"
+            type="number"
+            placeholder="$3000"
+            onChange={handleChangeAmount}
+          />
         </div>
       </div>
       {/***mortgage-amount-container******/}
@@ -23,7 +45,12 @@ const Calculator = () => {
         <div>
           <p>Mortgage Term</p>
           <div className="input-term input-general">
-            <input className="input-general" type="text" placeholder="25" />
+            <input
+              className="input-general"
+              type="number"
+              placeholder="25"
+              onChange={handleChangeYears}
+            />
             <p>years</p>
           </div>
         </div>
@@ -31,7 +58,12 @@ const Calculator = () => {
         <div>
           <p>Interest Rate</p>
           <div className="input-rate ">
-            <input className="input-general" type="text" placeholder="5.25" />
+            <input
+              className="input-general"
+              type="number"
+              placeholder="5.25"
+              onChange={handleInputInterest}
+            />
             <p>%</p>
           </div>
         </div>
