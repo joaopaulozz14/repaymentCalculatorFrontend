@@ -8,4 +8,9 @@ button {
   gap: 10px;
   color: hsl(202, 55%, 16%);
   font-size: 14px;
+  cursor: pointer;
+  img{
+    height: 16px;
+  }
 }
+
