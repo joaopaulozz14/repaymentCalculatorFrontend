@@ -16,6 +16,8 @@
   grid-template-columns: 1fr 1fr;
   border-radius: 24px;
 }
-.background-color-results{
+.background-color-results {
   background-color: var(--White);
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
 }

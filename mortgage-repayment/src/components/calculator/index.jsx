@@ -91,6 +91,7 @@ const Calculator = () => {
               className={`input-general-size `}
               type="number"
               onChange={handleInputInterest}
+              min={0}
             />
             <p>%</p>
           </div>
